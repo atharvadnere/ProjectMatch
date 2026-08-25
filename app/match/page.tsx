@@ -57,7 +57,7 @@ export default function FormPage() {
 
   return (
     <main className="min-h-screen flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-[560px] bg-surface rounded-card border-2 border-white shadow-hard p-8">
+      <div className="w-full max-w-[560px] bg-surface rounded-panel shadow-soft p-8">
         <h1 className="font-display font-extrabold text-[32px] leading-tight text-ink">
           Describe your project.
         </h1>
@@ -137,8 +137,8 @@ export default function FormPage() {
       <style jsx>{`
         :global(.input) {
           width: 100%;
-          background: var(--surface);
-          border: 2px solid var(--ink);
+          background: var(--surface-2);
+          border: 1px solid var(--line);
           border-radius: 8px;
           padding: 10px 12px;
           font-size: 14px;

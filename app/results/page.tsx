@@ -76,7 +76,7 @@ export default function ResultsPage() {
   if (!ready || !payload) {
     return (
       <main className="min-h-screen flex items-center justify-center bg-bg">
-        <p className="text-ink-soft text-[15px] inline-flex items-center gap-2">
+        <p className="text-white text-[15px] inline-flex items-center gap-2">
           <Spinner /> Loading results…
         </p>
       </main>
@@ -93,12 +93,12 @@ export default function ResultsPage() {
             clearPayload();
             router.push("/match");
           }}
-          className="self-start text-white text-[13px] font-semibold uppercase tracking-wide hover:text-ink-soft"
+          className="self-start text-white text-[13px] font-semibold uppercase tracking-wide hover:opacity-80"
         >
           ← New search
         </button>
 
-        <section className="bg-surface rounded-card border-2 border-ink shadow-hard p-6">
+        <section className="bg-surface rounded-card shadow-soft p-6">
           <h1 className="font-display font-extrabold text-[30px] text-ink">
             {project.title}
           </h1>
@@ -109,7 +109,7 @@ export default function ResultsPage() {
             {project.requiredSkills.map((skill) => (
               <span
                 key={skill}
-                className="bg-surface border-2 border-ink rounded-input px-2 py-1 text-[12px] font-semibold uppercase text-ink"
+                className="bg-surface border-line rounded-input px-2 py-1 text-[12px] font-semibold uppercase text-ink"
               >
                 {skill}
               </span>
@@ -163,8 +163,8 @@ function CandidateCard({
     <article
       className={
         isTop
-          ? "bg-surface rounded-card border-[3px] border-white shadow-hard p-5 animate-rise"
-          : "bg-surface rounded-card border-2 border-white shadow-hard p-5 animate-rise"
+          ? "bg-surface rounded-card shadow-soft p-5 animate-rise border-l-4 border-accent"
+          : "bg-surface rounded-card shadow-soft p-5 animate-rise"
       }
       style={{ animationDelay: `${Math.min(index, 8) * 60}ms` }}
     >
@@ -203,7 +203,7 @@ function CandidateCard({
         {candidate.skills.map((skill) => (
           <span
             key={skill}
-            className="bg-surface border-2 border-ink rounded-input px-2 py-1 text-[12px] font-semibold uppercase text-ink"
+                className="bg-surface border-line rounded-input px-2 py-1 text-[12px] font-semibold uppercase text-ink"
           >
             {skill}
           </span>
@@ -211,7 +211,7 @@ function CandidateCard({
       </div>
 
       {reasoning && (
-        <p className="mt-3 text-[14px] text-ink border-t-2 border-ink pt-3">
+          <p className="mt-3 text-[14px] text-ink border-t border-line pt-3">
           {reasoning}
         </p>
       )}
@@ -220,12 +220,12 @@ function CandidateCard({
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="bg-surface text-ink font-display font-extrabold text-[13px] uppercase tracking-wide rounded-input px-4 py-2 border-2 border-ink shadow-hard transition-transform hover:-translate-y-0.5 active:translate-y-0"
+          className="bg-surface text-ink font-display font-extrabold text-[13px] uppercase tracking-wide rounded-input px-4 py-2 border-line shadow-soft transition-transform hover:-translate-y-0.5 active:translate-y-0"
         >
           {open ? "Hide contact" : "Contact"}
         </button>
         {open && (
-          <div className="mt-3 bg-surface-2 border-2 border-ink rounded-input p-3 text-[13px] flex flex-col gap-2">
+          <div className="mt-3 bg-surface-2 border-line rounded-input p-3 text-[13px] flex flex-col gap-2">
             <div className="flex gap-3">
               <span className="w-20 shrink-0 text-ink-soft font-semibold uppercase text-[11px] pt-0.5">
                 LinkedIn

@@ -12,7 +12,7 @@ export default function LandingPage() {
         </p>
       </div>
 
-      <div className="w-full max-w-[560px] bg-surface rounded-card border-2 border-white shadow-hard p-8 text-center animate-rise">
+      <div className="w-full max-w-[560px] bg-surface rounded-panel shadow-soft p-8 text-center animate-rise">
         <p className="text-ink-soft text-[16px]">
           ProjectMatch ranks teammates who fill the gaps your team actually has —
           not just the most experienced people.
@@ -20,7 +20,7 @@ export default function LandingPage() {
 
         <Link
           href="/match"
-          className="mt-8 inline-block bg-accent text-ink font-display font-extrabold text-[16px] rounded-input px-8 py-3 border-2 border-ink shadow-hard transition-transform hover:-translate-y-0.5 active:translate-y-0"
+          className="mt-8 inline-block bg-accent text-ink font-display font-extrabold text-[16px] rounded-input px-8 py-3 border-2 border-ink shadow-soft transition-transform hover:-translate-y-0.5 active:translate-y-0"
         >
           Find your team
         </Link>
@@ -28,7 +28,7 @@ export default function LandingPage() {
         <div className="mt-6">
           <Link
             href="/how-it-works"
-            className="text-white font-semibold text-[13px] uppercase tracking-wide hover:text-ink-soft transition-colors"
+            className="text-white font-semibold text-[13px] uppercase tracking-wide hover:opacity-80 transition-opacity"
           >
             See how it works →
           </Link>

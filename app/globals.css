@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --bg: #000000;
+  --bg: #380109;
   --surface: #ffffff;
   --surface-2: #f7f5fc;
   --ink: #141414;
   --ink-soft: #5b5b5b;
-  --line: #141414;
+  --line: #e7e2f5;
   --accent: #ffc72c;
   --brand: #2e7d32;
   --warn: #d6483c;
@@ -23,6 +23,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><text x='6' y='22' font-family='monospace' font-size='14' fill='%23ffffff' fill-opacity='0.06'>1011 0100 1110 0011 1011 0100 1110</text><text x='6' y='50' font-family='monospace' font-size='14' fill='%23ffffff' fill-opacity='0.06'>0100 1110 0011 1011 0100 1110 0011</text><text x='6' y='78' font-family='monospace' font-size='14' fill='%23ffffff' fill-opacity='0.06'>1110 0011 1011 0100 1110 0011 1011</text><text x='6' y='106' font-family='monospace' font-size='14' fill='%23ffffff' fill-opacity='0.06'>0011 1011 0100 1110 0011 1011 0100</text><text x='6' y='134' font-family='monospace' font-size='14' fill='%23ffffff' fill-opacity='0.06'>1011 0100 1110 0011 1011 0100 1110</text><text x='6' y='162' font-family='monospace' font-size='14' fill='%23ffffff' fill-opacity='0.06'>0100 1110 0011 1011 0100 1110 0011</text><text x='6' y='190' font-family='monospace' font-size='14' fill='%23ffffff' fill-opacity='0.06'>PROJECTMATCH // PROJECTMATCH //</text></svg>");
+  background-repeat: repeat;
 }
 
 input,

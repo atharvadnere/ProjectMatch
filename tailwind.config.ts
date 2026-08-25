@@ -25,10 +25,11 @@ const config: Config = {
       },
       borderRadius: {
         input: "8px",
-        card: "12px",
+        card: "14px",
+        panel: "22px",
       },
       boxShadow: {
-        hard: "4px 4px 0 0 #ffffff",
+        soft: "0 2px 6px rgba(20,20,20,.05), 0 12px 28px rgba(20,20,20,.08)",
       },
       spacing: {
         "1": "4px",

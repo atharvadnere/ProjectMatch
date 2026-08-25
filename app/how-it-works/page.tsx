@@ -22,7 +22,7 @@ export default function HowItWorksPage() {
   return (
     <main className="min-h-screen flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-[760px] flex flex-col gap-6">
-        <section className="bg-surface rounded-card border-2 border-white shadow-hard p-8 text-center animate-rise">
+        <section className="bg-surface rounded-card shadow-soft p-8 text-center animate-rise">
           <span className="inline-block bg-accent text-ink font-display font-extrabold text-[12px] uppercase tracking-wide rounded-input px-3 py-1 border-2 border-ink">
             How it works
           </span>
@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
           {STEPS.map((step, i) => (
             <article
               key={step.n}
-              className="bg-surface rounded-card border-2 border-white shadow-hard p-6 flex flex-col sm:flex-row gap-4 items-start animate-rise"
+              className="bg-surface rounded-card shadow-soft p-6 flex flex-col sm:flex-row gap-4 items-start animate-rise"
               style={{ animationDelay: `${(i + 1) * 80}ms` }}
             >
               <span className="font-display font-extrabold text-[40px] leading-none text-ink">
@@ -58,7 +58,7 @@ export default function HowItWorksPage() {
         <div className="text-center">
           <Link
             href="/match"
-            className="inline-block bg-accent text-ink font-display font-extrabold text-[16px] rounded-input px-8 py-3 border-2 border-white shadow-hard transition-transform hover:-translate-y-0.5 active:translate-y-0"
+            className="inline-block bg-accent text-ink font-display font-extrabold text-[16px] rounded-input px-8 py-3 shadow-soft transition-transform hover:-translate-y-0.5 active:translate-y-0"
           >
             Find your team
           </Link>
