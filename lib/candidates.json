@@ -1,0 +1,109 @@
+{
+  "candidates": [
+    {
+      "id": "c1",
+      "name": "Maya Chen",
+      "skills": ["frontend", "react", "typescript", "css"],
+      "pastWork": "Built design systems for two fintech startups.",
+      "availability": "high"
+    },
+    {
+      "id": "c2",
+      "name": "Diego Ramos",
+      "skills": ["backend", "node", "postgres", "api"],
+      "pastWork": "Shipped a payments API handling 2M req/day.",
+      "availability": "med"
+    },
+    {
+      "id": "c3",
+      "name": "Priya Nair",
+      "skills": ["design", "figma", "ux", "research"],
+      "pastWork": "Led UX for a healthcare app with 500k users.",
+      "availability": "high"
+    },
+    {
+      "id": "c4",
+      "name": "Sam Okafor",
+      "skills": ["data", "python", "ml", "sql"],
+      "pastWork": "Built churn-prediction models for a SaaS company.",
+      "availability": "med"
+    },
+    {
+      "id": "c5",
+      "name": "Lena Novak",
+      "skills": ["devops", "aws", "kubernetes", "terraform"],
+      "pastWork": "Cut infra costs 40% via IaC migration.",
+      "availability": "low"
+    },
+    {
+      "id": "c6",
+      "name": "Tom Becker",
+      "skills": ["mobile", "swift", "ios", "ui"],
+      "pastWork": "Published a top-50 finance app on the App Store.",
+      "availability": "high"
+    },
+    {
+      "id": "c7",
+      "name": "Aisha Khan",
+      "skills": ["frontend", "vue", "javascript", "accessibility"],
+      "pastWork": "Accessibility lead on a gov public-services portal.",
+      "availability": "med"
+    },
+    {
+      "id": "c8",
+      "name": "Ravi Menon",
+      "skills": ["backend", "go", "microservices", "redis"],
+      "pastWork": "Architected a real-time bidding microservice.",
+      "availability": "high"
+    },
+    {
+      "id": "c9",
+      "name": "Chloe Dubois",
+      "skills": ["design", "branding", "illustration", "figma"],
+      "pastWork": "Branded a DTC skincare launch that 3x'd conversion.",
+      "availability": "low"
+    },
+    {
+      "id": "c10",
+      "name": "Noah Williams",
+      "skills": ["data", "analytics", "sql", "tableau"],
+      "pastWork": "Built exec dashboards adopted across 6 teams.",
+      "availability": "med"
+    },
+    {
+      "id": "c11",
+      "name": "Yuki Tanaka",
+      "skills": ["devops", "ci-cd", "docker", "linux"],
+      "pastWork": "Set up zero-downtime deploys for a gaming platform.",
+      "availability": "high"
+    },
+    {
+      "id": "c12",
+      "name": "Grace Adeyemi",
+      "skills": ["mobile", "flutter", "dart", "android"],
+      "pastWork": "Launched a cross-platform delivery app in 14 weeks.",
+      "availability": "med"
+    },
+    {
+      "id": "c13",
+      "name": "Felix Hartmann",
+      "skills": ["backend", "python", "django", "graphql"],
+      "pastWork": "Built a GraphQL gateway unifying 9 internal services.",
+      "availability": "low"
+    },
+    {
+      "id": "c14",
+      "name": "Sofia Rossi",
+      "skills": ["frontend", "svelte", "typescript", "animation"],
+      "pastWork": "Crafted award-winning motion UI for a music app.",
+      "availability": "high"
+    },
+    {
+      "id": "c15",
+      "name": "Ethan Brooks",
+      "skills": ["data", "ml", "pytorch", "nlp"],
+      "pastWork": "Shipped an LLM support bot cutting tickets 30%.",
+      "availability": "med"
+    }
+  ]
+}

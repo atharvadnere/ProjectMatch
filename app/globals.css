@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #000000;
+  --surface: #ffffff;
+  --surface-2: #f7f5fc;
+  --ink: #141414;
+  --ink-soft: #5b5b5b;
+  --line: #141414;
+  --accent: #ffc72c;
+  --brand: #2e7d32;
+  --warn: #d6483c;
+  --focus: #7b5cf0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise {
+    animation: none;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
