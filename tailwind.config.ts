@@ -29,7 +29,7 @@ const config: Config = {
         panel: "22px",
       },
       boxShadow: {
-        soft: "0 2px 6px rgba(20,20,20,.05), 0 12px 28px rgba(20,20,20,.08)",
+        soft: "0 2px 12px rgba(255,255,255,0.18), 0 10px 30px rgba(0,0,0,0.22)",
       },
       spacing: {
         "1": "4px",
