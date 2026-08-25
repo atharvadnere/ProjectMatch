@@ -8,25 +8,22 @@ import Spinner from "@/components/Spinner";
 import type { MatchResult } from "@/lib/types";
 
 // Visual-only, made-up per-candidate extras (no real data behind these).
-const CANDIDATE_EXTRA: Record<
-  string,
-  { rating: number; projects: number; phone: string }
-> = {
-  c1: { rating: 4.3, projects: 23, phone: "+1 (555) 014-2380" },
-  c2: { rating: 3.6, projects: 17, phone: "+1 (555) 016-7742" },
-  c3: { rating: 4.9, projects: 31, phone: "+1 (555) 019-3155" },
-  c4: { rating: 3.1, projects: 14, phone: "+1 (555) 013-0912" },
-  c5: { rating: 2.7, projects: 9, phone: "+1 (555) 012-6640" },
-  c6: { rating: 4.5, projects: 19, phone: "+1 (555) 017-5561" },
-  c7: { rating: 3.8, projects: 12, phone: "+1 (555) 011-3084" },
-  c8: { rating: 4.1, projects: 27, phone: "+1 (555) 018-9923" },
-  c9: { rating: 2.9, projects: 8, phone: "+1 (555) 010-4771" },
-  c10: { rating: 4.6, projects: 15, phone: "+1 (555) 015-1206" },
-  c11: { rating: 4.8, projects: 29, phone: "+1 (555) 019-8830" },
-  c12: { rating: 3.4, projects: 18, phone: "+1 (555) 017-2419" },
-  c13: { rating: 2.5, projects: 7, phone: "+1 (555) 010-6352" },
-  c14: { rating: 4.0, projects: 22, phone: "+1 (555) 018-7745" },
-  c15: { rating: 3.7, projects: 13, phone: "+1 (555) 014-9038" },
+const CANDIDATE_EXTRA: Record<string, { rating: number; phone: string }> = {
+  c1: { rating: 4.3, phone: "+1 (555) 014-2380" },
+  c2: { rating: 3.6, phone: "+1 (555) 016-7742" },
+  c3: { rating: 4.9, phone: "+1 (555) 019-3155" },
+  c4: { rating: 3.1, phone: "+1 (555) 013-0912" },
+  c5: { rating: 2.7, phone: "+1 (555) 012-6640" },
+  c6: { rating: 4.5, phone: "+1 (555) 017-5561" },
+  c7: { rating: 3.8, phone: "+1 (555) 011-3084" },
+  c8: { rating: 4.1, phone: "+1 (555) 018-9923" },
+  c9: { rating: 2.9, phone: "+1 (555) 010-4771" },
+  c10: { rating: 4.6, phone: "+1 (555) 015-1206" },
+  c11: { rating: 4.8, phone: "+1 (555) 019-8830" },
+  c12: { rating: 3.4, phone: "+1 (555) 017-2419" },
+  c13: { rating: 2.5, phone: "+1 (555) 010-6352" },
+  c14: { rating: 4.0, phone: "+1 (555) 018-7745" },
+  c15: { rating: 3.7, phone: "+1 (555) 014-9038" },
 };
 
 function Star({ fill }: { fill: number }) {
@@ -148,11 +145,10 @@ function CandidateCard({
   index: number;
 }) {
   const { candidate, score, reasoning } = result;
-  const [open, setOpen] = useState(false);
+  const [tab, setTab] = useState<"none" | "experience" | "contact">("none");
   const extra =
     CANDIDATE_EXTRA[candidate.id] ?? {
       rating: 4.5,
-      projects: 10,
       phone: "+1 (555) 010-0000",
     };
   const handle = candidate.name.toLowerCase().replace(/[^a-z]/g, "");
@@ -184,7 +180,7 @@ function CandidateCard({
           <div className="flex items-center gap-2 mt-2">
             <Stars rating={extra.rating} />
             <span className="text-ink-soft text-[12px]">
-              Worked on {extra.projects} successful projects.
+              Worked on {candidate.experience?.length ?? 0} projects.
             </span>
           </div>
         </div>
@@ -216,16 +212,41 @@ function CandidateCard({
         </p>
       )}
 
-      <div className="mt-4">
+      <div className="mt-4 flex flex-wrap gap-2">
         <button
           type="button"
-          onClick={() => setOpen((v) => !v)}
+          onClick={() => setTab((t) => (t === "experience" ? "none" : "experience"))}
           className="bg-surface text-ink font-display font-extrabold text-[13px] uppercase tracking-wide rounded-input px-4 py-2 border-line shadow-soft transition-transform hover:-translate-y-0.5 active:translate-y-0"
         >
-          {open ? "Hide contact" : "Contact"}
+          {tab === "experience" ? "Hide experience" : "Experience"}
         </button>
-        {open && (
-          <div className="mt-3 bg-surface-2 border-line rounded-input p-3 text-[13px] flex flex-col gap-2">
+        <button
+          type="button"
+          onClick={() => setTab((t) => (t === "contact" ? "none" : "contact"))}
+          className="bg-surface text-ink font-display font-extrabold text-[13px] uppercase tracking-wide rounded-input px-4 py-2 border-line shadow-soft transition-transform hover:-translate-y-0.5 active:translate-y-0"
+        >
+          {tab === "contact" ? "Hide contact" : "Contact"}
+        </button>
+
+        {tab === "experience" && (
+          <div className="mt-3 w-full bg-surface-2 border-line rounded-input p-3 flex flex-col gap-3">
+            {(candidate.experience ?? []).map((p, idx) => (
+              <div key={idx} className="flex flex-col gap-0.5">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-semibold text-ink">{p.name}</span>
+                  <span className="text-ink-soft text-[11px] uppercase tracking-wide">
+                    {p.year}
+                  </span>
+                </div>
+                <span className="text-ink-soft text-[12px]">{p.role}</span>
+                <span className="text-ink text-[13px]">{p.blurb}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {tab === "contact" && (
+          <div className="mt-3 w-full bg-surface-2 border-line rounded-input p-3 text-[13px] flex flex-col gap-2">
             <div className="flex gap-3">
               <span className="w-20 shrink-0 text-ink-soft font-semibold uppercase text-[11px] pt-0.5">
                 LinkedIn

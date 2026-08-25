@@ -34,6 +34,22 @@ export default function LandingPage() {
           </Link>
         </div>
       </div>
+
+      <div className="flex flex-wrap justify-center gap-2 max-w-[560px]">
+        <span className="bg-surface border border-ink rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-ink">
+          Gap-aware matching
+        </span>
+        <span className="bg-surface border border-ink rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-ink">
+          AI-explained results
+        </span>
+        <span className="bg-surface border border-ink rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-ink">
+          Instant ranking
+        </span>
+      </div>
+
+      <footer className="font-mono text-[12px] text-ink-soft">
+        Built for Prompt Wars · SRMIST
+      </footer>
     </main>
   );
 }

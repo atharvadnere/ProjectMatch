@@ -5,105 +5,336 @@
       "name": "Maya Chen",
       "skills": ["frontend", "react", "typescript", "css"],
       "pastWork": "Built design systems for two fintech startups.",
-      "availability": "high"
+      "availability": "high",
+      "experience": [
+        { "name": "Ledgerly", "role": "Frontend Engineer", "year": "2023", "blurb": "Built the transaction dashboard and a reusable component library." },
+        { "name": "Pennywise", "role": "UI Engineer", "year": "2022", "blurb": "Shipped the onboarding flow that lifted activation by 18%." },
+        { "name": "Cobalt Pay", "role": "Frontend Contractor", "year": "2021", "blurb": "Migrated a legacy jQuery admin panel to React + TypeScript." }
+      ]
     },
     {
       "id": "c2",
       "name": "Diego Ramos",
       "skills": ["backend", "node", "postgres", "api"],
       "pastWork": "Shipped a payments API handling 2M req/day.",
-      "availability": "med"
+      "availability": "med",
+      "experience": [
+        { "name": "Northwind Payments", "role": "Backend Engineer", "year": "2023", "blurb": "Designed the ledger service and idempotent charge endpoints." },
+        { "name": "Casa Store", "role": "API Engineer", "year": "2021", "blurb": "Built the order and inventory APIs on Node + Postgres." },
+        { "name": "Townhall", "role": "Backend Contractor", "year": "2020", "blurb": "Created a webhook platform for third-party integrations." }
+      ]
     },
     {
       "id": "c3",
       "name": "Priya Nair",
       "skills": ["design", "figma", "ux", "research"],
       "pastWork": "Led UX for a healthcare app with 500k users.",
-      "availability": "high"
+      "availability": "high",
+      "experience": [
+        { "name": "CareLoop", "role": "Lead Product Designer", "year": "2023", "blurb": "Owned end-to-end UX for patient scheduling and telehealth." },
+        { "name": "MediTrack", "role": "UX Designer", "year": "2021", "blurb": "Ran discovery research and shipped the medication-reminder flow." },
+        { "name": "Bloom Health", "role": "Design Contractor", "year": "2020", "blurb": "Designed the design system and component specs in Figma." }
+      ]
     },
     {
       "id": "c4",
       "name": "Sam Okafor",
       "skills": ["data", "python", "ml", "sql"],
       "pastWork": "Built churn-prediction models for a SaaS company.",
-      "availability": "med"
+      "availability": "med",
+      "experience": [
+        { "name": "Subscribely", "role": "Data Scientist", "year": "2023", "blurb": "Built a churn model that recovered 6% of at-risk accounts." },
+        { "name": "RetailIQ", "role": "ML Engineer", "year": "2021", "blurb": "Developed demand-forecasting pipelines in Python + SQL." },
+        { "name": "VoteWave", "role": "Analytics Contractor", "year": "2020", "blurb": "Analyzed engagement data to guide campaign strategy." }
+      ]
     },
     {
       "id": "c5",
       "name": "Lena Novak",
       "skills": ["devops", "aws", "kubernetes", "terraform"],
       "pastWork": "Cut infra costs 40% via IaC migration.",
-      "availability": "low"
+      "availability": "low",
+      "experience": [
+        { "name": "Streamly", "role": "Platform Engineer", "year": "2023", "blurb": "Migrated workloads to EKS and cut monthly spend by 40%." },
+        { "name": "Buildbox", "role": "DevOps Engineer", "year": "2021", "blurb": "Wrote Terraform modules and standardized CI across teams." },
+        { "name": "Pixel CDN", "role": "SRE Contractor", "year": "2020", "blurb": "Set up observability and on-call runbooks for 12 services." }
+      ]
     },
     {
       "id": "c6",
       "name": "Tom Becker",
       "skills": ["mobile", "swift", "ios", "ui"],
       "pastWork": "Published a top-50 finance app on the App Store.",
-      "availability": "high"
+      "availability": "high",
+      "experience": [
+        { "name": "Stackr", "role": "iOS Engineer", "year": "2023", "blurb": "Built the budgeting feature that drove a top-50 App Store rank." },
+        { "name": "RunPal", "role": "Swift Developer", "year": "2021", "blurb": "Shipped the activity feed and animated insights screens." },
+        { "name": "QuickNote", "role": "Mobile Contractor", "year": "2020", "blurb": "Prototyped an offline-first notes app in Swift." }
+      ]
     },
     {
       "id": "c7",
       "name": "Aisha Khan",
       "skills": ["frontend", "vue", "javascript", "accessibility"],
       "pastWork": "Accessibility lead on a gov public-services portal.",
-      "availability": "med"
+      "availability": "med",
+      "experience": [
+        { "name": "GovPortal", "role": "Accessibility Lead", "year": "2023", "blurb": "Drove WCAG 2.1 AA compliance across 40 public pages." },
+        { "name": "EduVue", "role": "Frontend Engineer", "year": "2021", "blurb": "Built the student dashboard in Vue with a11y tests." },
+        { "name": "Townsquare", "role": "Web Contractor", "year": "2020", "blurb": "Created a component library with keyboard-nav support." }
+      ]
     },
     {
       "id": "c8",
       "name": "Ravi Menon",
       "skills": ["backend", "go", "microservices", "redis"],
       "pastWork": "Architected a real-time bidding microservice.",
-      "availability": "high"
+      "availability": "high",
+      "experience": [
+        { "name": "AdBid", "role": "Backend Architect", "year": "2023", "blurb": "Built a low-latency bidding service in Go + Redis." },
+        { "name": "Chatter", "role": "Backend Engineer", "year": "2021", "blurb": "Designed the presence and message fan-out microservices." },
+        { "name": "QueueHub", "role": "Go Contractor", "year": "2020", "blurb": "Implemented a job queue with at-least-once delivery." }
+      ]
     },
     {
       "id": "c9",
       "name": "Chloe Dubois",
       "skills": ["design", "branding", "illustration", "figma"],
       "pastWork": "Branded a DTC skincare launch that 3x'd conversion.",
-      "availability": "low"
+      "availability": "low",
+      "experience": [
+        { "name": "Glowery", "role": "Brand Designer", "year": "2023", "blurb": "Created the visual identity and packaging for a skincare launch." },
+        { "name": "Fable", "role": "Illustrator", "year": "2021", "blurb": "Produced editorial illustrations for a children's app." },
+        { "name": "Northwind", "role": "Design Contractor", "year": "2020", "blurb": "Refreshed the marketing site and social templates." }
+      ]
     },
     {
       "id": "c10",
       "name": "Noah Williams",
       "skills": ["data", "analytics", "sql", "tableau"],
       "pastWork": "Built exec dashboards adopted across 6 teams.",
-      "availability": "med"
+      "availability": "med",
+      "experience": [
+        { "name": "Helios Corp", "role": "Analytics Engineer", "year": "2023", "blurb": "Built the exec KPI suite used by 6 departments." },
+        { "name": "ShopWave", "role": "Data Analyst", "year": "2021", "blurb": "Modeled funnel metrics and churn cohorts in SQL." },
+        { "name": "CivicData", "role": "BI Contractor", "year": "2020", "blurb": "Designed Tableau dashboards for public budget data." }
+      ]
     },
     {
       "id": "c11",
       "name": "Yuki Tanaka",
       "skills": ["devops", "ci-cd", "docker", "linux"],
       "pastWork": "Set up zero-downtime deploys for a gaming platform.",
-      "availability": "high"
+      "availability": "high",
+      "experience": [
+        { "name": "ArcadeX", "role": "DevOps Engineer", "year": "2023", "blurb": "Built blue-green deploys with zero downtime for 3M players." },
+        { "name": "DevStream", "role": "Platform Engineer", "year": "2021", "blurb": "Containerized 50 services and tuned the CI runners." },
+        { "name": "Lintly", "role": "Linux Contractor", "year": "2020", "blurb": "Hardened servers and automated patch rollouts." }
+      ]
     },
     {
       "id": "c12",
       "name": "Grace Adeyemi",
       "skills": ["mobile", "flutter", "dart", "android"],
       "pastWork": "Launched a cross-platform delivery app in 14 weeks.",
-      "availability": "med"
+      "availability": "med",
+      "experience": [
+        { "name": "Sendy", "role": "Flutter Developer", "year": "2023", "blurb": "Shipped rider and customer apps from one Flutter codebase." },
+        { "name": "FitDash", "role": "Mobile Engineer", "year": "2021", "blurb": "Built the workout tracker and offline sync in Dart." },
+        { "name": "MarketGo", "role": "Android Contractor", "year": "2020", "blurb": "Prototyped a vendor app for a local marketplace." }
+      ]
     },
     {
       "id": "c13",
       "name": "Felix Hartmann",
       "skills": ["backend", "python", "django", "graphql"],
       "pastWork": "Built a GraphQL gateway unifying 9 internal services.",
-      "availability": "low"
+      "availability": "low",
+      "experience": [
+        { "name": "Unify", "role": "Backend Engineer", "year": "2023", "blurb": "Built a GraphQL gateway over 9 internal REST services." },
+        { "name": "DocuFlow", "role": "Python Developer", "year": "2021", "blurb": "Automated document pipelines with Django + Celery." },
+        { "name": "OpenCMS", "role": "Backend Contractor", "year": "2020", "blurb": "Extended a headless CMS with custom content types." }
+      ]
     },
     {
       "id": "c14",
       "name": "Sofia Rossi",
       "skills": ["frontend", "svelte", "typescript", "animation"],
       "pastWork": "Crafted award-winning motion UI for a music app.",
-      "availability": "high"
+      "availability": "high",
+      "experience": [
+        { "name": "Resonate", "role": "Frontend Engineer", "year": "2023", "blurb": "Built the animated now-playing experience that won an award." },
+        { "name": "Loop", "role": "UI Engineer", "year": "2021", "blurb": "Created the motion design system in Svelte." },
+        { "name": "GalleryX", "role": "Web Contractor", "year": "2020", "blurb": "Prototyped a scroll-driven storytelling site." }
+      ]
     },
     {
       "id": "c15",
       "name": "Ethan Brooks",
       "skills": ["data", "ml", "pytorch", "nlp"],
       "pastWork": "Shipped an LLM support bot cutting tickets 30%.",
-      "availability": "med"
+      "availability": "med",
+      "experience": [
+        { "name": "Helpdesk AI", "role": "ML Engineer", "year": "2023", "blurb": "Fine-tuned an LLM support agent that cut tickets 30%." },
+        { "name": "Lexicon", "role": "NLP Engineer", "year": "2021", "blurb": "Built a document-classification model in PyTorch." },
+        { "name": "Summr", "role": "Data Contractor", "year": "2020", "blurb": "Shipped a text-summarization service for news feeds." }
+      ]
+    },
+    {
+      "id": "c16",
+      "name": "Marcus Lee",
+      "skills": ["backend", "java", "spring", "kafka"],
+      "pastWork": "Built an event-driven banking core on Spring + Kafka.",
+      "availability": "high",
+      "experience": [
+        { "name": "CoreBank", "role": "Backend Engineer", "year": "2023", "blurb": "Built the event-sourced accounts service on Spring + Kafka." },
+        { "name": "TradeDesk", "role": "Java Developer", "year": "2021", "blurb": "Implemented the order-matching engine with low latency." },
+        { "name": "LedgerSoft", "role": "Backend Contractor", "year": "2020", "blurb": "Added audit logging and compliance reports." }
+      ]
+    },
+    {
+      "id": "c17",
+      "name": "Hana Kim",
+      "skills": ["frontend", "angular", "typescript", "rxjs"],
+      "pastWork": "Built an enterprise analytics console in Angular.",
+      "availability": "med",
+      "experience": [
+        { "name": "MetricConsole", "role": "Frontend Engineer", "year": "2023", "blurb": "Built a real-time analytics console in Angular + RxJS." },
+        { "name": "InsureUI", "role": "UI Engineer", "year": "2021", "blurb": "Shipped the policy-management portal for 200k agents." },
+        { "name": "FormFlow", "role": "Web Contractor", "year": "2020", "blurb": "Created a dynamic form engine with validation." }
+      ]
+    },
+    {
+      "id": "c18",
+      "name": "Omar Farouk",
+      "skills": ["data", "spark", "python", "etl"],
+      "pastWork": "Built petabyte-scale ETL on Spark for a retailer.",
+      "availability": "high",
+      "experience": [
+        { "name": "MegaMart", "role": "Data Engineer", "year": "2023", "blurb": "Built Spark ETL processing 2PB of clickstream daily." },
+        { "name": "TelecoData", "role": "Pipeline Engineer", "year": "2021", "blurb": "Designed the CDC pipeline from mainframes to lakehouse." },
+        { "name": "StatsHub", "role": "Data Contractor", "year": "2020", "blurb": "Automated report generation with Airflow." }
+      ]
+    },
+    {
+      "id": "c19",
+      "name": "Bella Conti",
+      "skills": ["design", "research", "ux", "interviewing"],
+      "pastWork": "Ran discovery research for a banking super-app.",
+      "availability": "med",
+      "experience": [
+        { "name": "OneBank", "role": "UX Researcher", "year": "2023", "blurb": "Ran 40 interviews shaping the super-app strategy." },
+        { "name": "TravelEase", "role": "Research Lead", "year": "2021", "blurb": "Validated the booking flow with usability testing." },
+        { "name": "Edureka", "role": "Research Contractor", "year": "2020", "blurb": "Conducted diary studies on learning habits." }
+      ]
+    },
+    {
+      "id": "c20",
+      "name": "Vikram Singh",
+      "skills": ["fullstack", "react", "node", "mongodb"],
+      "pastWork": "Shipped a marketplace MVP solo in 8 weeks.",
+      "availability": "high",
+      "experience": [
+        { "name": "SwapSpot", "role": "Fullstack Engineer", "year": "2023", "blurb": "Built the marketplace MVP end-to-end in React + Node." },
+        { "name": "Evently", "role": "Fullstack Dev", "year": "2021", "blurb": "Shipped ticketing with real-time seat maps." },
+        { "name": "MiniCRM", "role": "Founder", "year": "2020", "blurb": "Built and launched a small CRM as a side project." }
+      ]
+    },
+    {
+      "id": "c21",
+      "name": "Nadia Petrova",
+      "skills": ["security", "appsec", "pentest", "owasp"],
+      "pastWork": "Led appsec for a payments processor.",
+      "availability": "low",
+      "experience": [
+        { "name": "SafePay", "role": "AppSec Lead", "year": "2023", "blurb": "Ran the SDLC security program and threat modeling." },
+        { "name": "PenTest Co", "role": "Penetration Tester", "year": "2021", "blurb": "Found critical auth flaws across 12 client apps." },
+        { "name": "ShieldOps", "role": "Security Contractor", "year": "2020", "blurb": "Built automated SAST/DAST into CI." }
+      ]
+    },
+    {
+      "id": "c22",
+      "name": "Theo Muller",
+      "skills": ["systems", "rust", "c", "performance"],
+      "pastWork": "Wrote a high-throughput storage engine in Rust.",
+      "availability": "med",
+      "experience": [
+        { "name": "FastStore", "role": "Systems Engineer", "year": "2023", "blurb": "Built a Rust LSM storage engine handling 1M writes/sec." },
+        { "name": "ComputeLab", "role": "Rust Developer", "year": "2021", "blurb": "Optimized a simd math library for 4x speedup." },
+        { "name": "EmbedX", "role": "Firmware Contractor", "year": "2020", "blurb": "Wrote C firmware for an IoT sensor node." }
+      ]
+    },
+    {
+      "id": "c23",
+      "name": "Aria Lopez",
+      "skills": ["product", "pm", "strategy", "roadmap"],
+      "pastWork": "Drove a 0-to-1 launch that hit 100k users.",
+      "availability": "high",
+      "experience": [
+        { "name": "Launchpad", "role": "Product Manager", "year": "2023", "blurb": "Owned the 0-to-1 launch that reached 100k users in 3 months." },
+        { "name": "GrowthCo", "role": "PM, Growth", "year": "2021", "blurb": "Ran experiments that lifted activation 22%." },
+        { "name": "BetaWorks", "role": "Associate PM", "year": "2020", "blurb": "Supported the roadmap for a developer tool." }
+      ]
+    },
+    {
+      "id": "c24",
+      "name": "Kenji Sato",
+      "skills": ["mobile", "kotlin", "android", "jetpack"],
+      "pastWork": "Built a banking app used by 1M Android users.",
+      "availability": "med",
+      "experience": [
+        { "name": "PocketBank", "role": "Android Engineer", "year": "2023", "blurb": "Built the transfers and cards features in Kotlin." },
+        { "name": "Commute", "role": "Mobile Developer", "year": "2021", "blurb": "Shipped offline maps with Jetpack components." },
+        { "name": "SnapList", "role": "Android Contractor", "year": "2020", "blurb": "Prototyped a shared-shopping app." }
+      ]
+    },
+    {
+      "id": "c25",
+      "name": "Zara Ahmed",
+      "skills": ["data", "viz", "tableau", "storytelling"],
+      "pastWork": "Turned churn data into a board-level narrative.",
+      "availability": "high",
+      "experience": [
+        { "name": "BoardView", "role": "Data Storyteller", "year": "2023", "blurb": "Built the quarterly board deck from churn analytics." },
+        { "name": "HealthViz", "role": "Viz Designer", "year": "2021", "blurb": "Created patient-outcome dashboards for clinics." },
+        { "name": "Trendline", "role": "BI Contractor", "year": "2020", "blurb": "Designed a self-serve metrics explorer." }
+      ]
+    },
+    {
+      "id": "c26",
+      "name": "Lucas Silva",
+      "skills": ["qa", "testing", "automation", "playwright"],
+      "pastWork": "Built E2E automation cutting regressions 60%.",
+      "availability": "med",
+      "experience": [
+        { "name": "QualityFirst", "role": "QA Automation Engineer", "year": "2023", "blurb": "Built Playwright suites that cut regressions 60%." },
+        { "name": "TestOps", "role": "SDET", "year": "2021", "blurb": "Set up contract testing between microservices." },
+        { "name": "ShipSafe", "role": "QA Contractor", "year": "2020", "blurb": "Introduced CI gating with flaky-test triage." }
+      ]
+    },
+    {
+      "id": "c27",
+      "name": "Ingrid Larsen",
+      "skills": ["design", "systems", "ui", "tokens"],
+      "pastWork": "Authored a multi-brand design system in Figma.",
+      "availability": "high",
+      "experience": [
+        { "name": "OmniBrand", "role": "Design Systems Lead", "year": "2023", "blurb": "Authored a token-driven system spanning 4 brands." },
+        { "name": "CanvasUI", "role": "Product Designer", "year": "2021", "blurb": "Shipped the editor and component specs." },
+        { "name": "StyleKit", "role": "Design Contractor", "year": "2020", "blurb": "Built the icon and color libraries." }
+      ]
+    },
+    {
+      "id": "c28",
+      "name": "Daniel Cohen",
+      "skills": ["backend", "python", "ml", "fastapi"],
+      "pastWork": "Shipped a recommendation API serving 5M users.",
+      "availability": "med",
+      "experience": [
+        { "name": "RecoEngine", "role": "ML Platform Engineer", "year": "2023", "blurb": "Built a FastAPI rec service serving 5M users." },
+        { "name": "SignalML", "role": "Python Engineer", "year": "2021", "blurb": "Deployed batch scoring jobs on Airflow." },
+        { "name": "DataLabs", "role": "Backend Contractor", "year": "2020", "blurb": "Built feature stores for model training." }
+      ]
     }
   ]
 }

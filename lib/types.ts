@@ -1,11 +1,19 @@
 export type Availability = "low" | "med" | "high";
 
+export interface ProjectExperience {
+  name: string;
+  role: string;
+  year: string;
+  blurb: string;
+}
+
 export interface Candidate {
   id: string;
   name: string;
   skills: string[];
   pastWork: string;
   availability: Availability;
+  experience?: ProjectExperience[];
 }
 
 export interface ProjectInput {
